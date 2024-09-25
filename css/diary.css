@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+::-webkit-scrollbar{width: 0;}
+h1 {display: none;}
+a  {text-decoration: none; color: black;}
+img {display: block;}
+
+#layout {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/**헤더(header)**/
+header {
+    height: 120px;       /*로고 크기가 바뀌면 수정할 것*/
+    display: flex;
+    padding: 10px;
+}
+ /*로고*/
+#logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /*메뉴*/
+#menu {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+#menu li {
+    margin-right: 30px;
+    font-weight: bold;
+}
+#menu li:hover a {
+    color: burlywood;
+}
+
+ /*로그인 개인페이지*/
+#login {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#login a {
+    display: block;
+    margin-left: 10px;
+}
+#login a:hover {
+    color: burlywood;
+}
+
+
+/************************************************************/
+/* 제목(title) */
+#title {
+    max-width: 1200px;
+    height: 150px;
+    margin: 0 auto 30px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(rgba(0,0,0,0), rgb(243, 240, 236));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 1.3rem;
+}
+
+/************************************************************/
+/* 메인 */
+#mC {
+    max-width: 1100px;
+    margin: 0 auto 100px;
+    padding: 10px;
+    position: relative;
+}
+
+/* 반려동물 프로필(pf, pf0) */
+#pf h2 {
+    width:160px; text-align: center;
+    padding: 5px 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    border: 3px solid rgb(241, 217, 186);
+    border-bottom: 3px solid white;
+    background-color: white;
+    transform: translateY(1px);
+}
+
+#pf .hit {
+    border: 3px solid rgb(241, 217, 186);
+    background-color: rgb(241, 217, 186);
+}
+
+.a1 p {margin-bottom: 5px;}
+
+/* 프로필 내용 전체 박스(pfcontent)*/
+#pfcontent {
+    padding: 25px 20px;
+    height: 3000px; width: 100%;
+    border: 3px solid rgb(241, 217, 186);
+    position: relative;
+}
+
+#pfcontent .mm {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#pfcontent .show {display: block;}
+
+.aa {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 50px;
+    background-color: rgb(243, 240, 236);
+    border-radius: 30px;
+}
+.aa h3 {
+    margin-bottom: 15px;
+}
+
+/* 반려동물 프로필 내용(aa, a1) */
+.a1 {
+    display: flex;
+}
+.a1 img {margin-right: 50px;}
+.a1> div {padding: 20px;}
+
+/* 한줄 메모(aa a2) */
+.a2> div> p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.a2> div> div {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* 반려동물 사료 식품(aa, a3) */
+.a3 form {
+    display: flex;
+    align-items: center;
+}
+.a3 form> select {
+    margin: 0 5px 10px 0;
+    padding: 5px 10px;
+    border: none;
+}
+.a3 form> input {
+    padding: 5px 10px;
+    border: none;
+    background-color: #999;
+    border-radius: 10px;
+}
+.a3> div> div {
+    display: flex;
+    padding: 10px;
+}
+
+.a3> div> div> div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.a3 .food {flex: 2;}
+.a3 .food> p:nth-of-type(2) {margin-bottom: 20px;}
+.a3 .food> div {
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+.a3 .snack {flex: 1;}
+
+.a3> div> div> a {
+    flex: 1;
+    text-align: center;
+}
+
+/* 반려동물 산책 코스(aa, a4) */
+.a4 iframe {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+.a4 ul {
+    margin: 20px 0;
+    padding-left: 10px;
+    list-style-position: inside;
+    line-height: 180%;
+}
+
+/* 반려동물 앨범(aa, a5) */
+.a5 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a5 div img {
+    margin: 5px;
+}
+
+/* 반려동물 기타 사항(aa, a7) */
+.a6> div {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    padding: 10px;
+}
+.a6> div> img {
+    max-width: 100px;
+    margin-right: 50px;
+}
+.a6> div> div {
+    flex: 2;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************************************************/
+
+
+/************************************************************/
+/* 글쓰기 */
+main #plus {
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    right: 5%;
+}
+
+/************************************************************/
+/* 푸터 */
+footer {
+    background-color: #ddd;
+    margin: auto;
+    padding: 10px 50px 50px;
+}
+
+/* 바로가기 */
+#fm {
+    width: 1000px;
+    margin: 0 auto 20px;
+    padding: 10px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #999;
+}
+#fm h4 {display: none;}
+
+/*푸터 나머지*/
+footer> div {
+    width: 1000px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*폰트*/
+header, h1, h2, h3, #quick {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } /*동글한 글씨체*/  

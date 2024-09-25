@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <div id="layout">
+        <form action="index.html" method="get"> <!--main.html-->
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="logo">
+                </a>
+            </h1>
+
+            <table>
+                <tr>
+                    <td colspan="2"><h2 id="sign_u">회원가입</h2></td>
+                </tr>
+                <tr>
+                    <th>ID :</th>
+                    <td><input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요."></td>
+                </tr>
+                <tr>
+                    <th>PW :</th>
+                    <td><input type="password" name="pw" id="pw1" placeholder="비밀번호를 입력해 주세요."></td>
+                </tr>
+                <tr>
+                    <th>PW :</th>
+                    <td><input type="password" name="pw" id="pw2" placeholder="비밀번호를 다시 입력해 주세요."></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td colspan="2"><h4>프로필 입력</h4></td>
+                </tr>
+                <tr>
+                    <th>활동명 :</th>
+                    <td><input type="text" name="p_name1" id="p_name1" placeholder="이름을 적어주세요."></td>
+                </tr>
+                <tr>
+                    <td colspan="2">자기소개 :</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="note" id="note" cols="33" rows="7" placeholder="자기 소개를 입력하세요" style="resize:none; border: 1px solid #ddd; border-radius: 10px; padding: 5px;"></textarea></td>
+                </tr>
+            </table>
+            
+            <button type="submit" id="loginbtn">로그인</button>
+        </form>
+    </div>
+</body>
+</html>

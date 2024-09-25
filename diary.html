@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이어리</title>
+
+    <link rel="stylesheet" href="css/diary.css">
+    <script src="js/diary.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <!---로고 이미지 id:logo-->
+            <a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            <!---메뉴(홈, 커뮤니티, 다이어리) id:menu-->
+            <ul id="menu">
+                <li>
+                    <a href="index.html">홈</a>
+                </li>
+                <li>
+                    <a href="community.html">커뮤니티</a>
+                </li>
+                <li>
+                    <a href="diary.html">다이어리</a>
+                </li>
+            </ul>
+            <!---로그인과 개인페이지 id:login-->
+            <div id="login">
+                <a href="signup.html">회원가입</a>
+                <a href="login.html">로그인</a>
+                <a href="personal.html">개인페이지</a>
+            </div>
+        </header>
+
+        <!---제목 커뮤니티 id:title-->
+        <div id="title">
+            <a href="#mC"><h2>다이어리</h2></a>
+        </div>
+
+
+        <main>
+            <div id="mC">
+                <!-- 반려동물 프로필, 일기 id:pf -->
+                <section id="pf">
+                    <h2 class="hit"><a href="#">몽몽이</a></h2>
+                    <h2 ><a href="#"> 아롱이 </a></h2>
+                    <h2 ><a href="#"> + </a></h2>
+
+                    <div id="pfcontent">
+                        <div class="mm mm1 show" id="one">
+                            <!-- 프로필 내용 class:aa a1 -->
+                            <div class="aa a1">
+                                <img src="images/vmfhvlf1.jpg" alt="강아지 프로필 사진">
+                                <div>
+                                    <h3>몽몽이</h3>
+                                    <p>나이: 2살</p>
+                                    <p>건강상태: ■■■■</p>
+                                    <p>활동성: ■■■</p>
+                                    <p>친화도: ■■■■■</p>
+                                    <p>특이사항: 00월에 새로 입양한 친구. 한쪽 다리가 불편하다.</p>
+                                </div>
+                            </div>
+
+                            <!-- 하루 한줄 메모 -->
+                            <div class="aa a2">
+                                <h3>한줄 메모</h3>
+                                <div>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            chevron_left
+                                            </span>
+                                        <b>8월 23일</b>
+                                        <span class="material-symbols-outlined">
+                                            chevron_right
+                                            </span>
+                                    </p>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 오늘의 사료 class:aa a3 -->
+                            <section class="aa a3">
+                                <h3>오늘의 사료</h3>
+                                <div>
+                                    <form action="#">
+                                        <select name="languages" id="lang">
+                                            <option value="select">저장된 탬플릿 중 하나를 선택하세요</option>
+                                            <option value="1">저장된 탬플릿1</option>
+                                            <option value="2">저장된 탬플릿2</option>
+                                            <option value="3">저장된 탬플릿3</option>
+                                            <option value="4">저장된 탬플릿4</option>
+                                        </select>
+                                        <input type="submit" value="저장">
+                                        <input type="submit" value="적용">
+                                    </form>
+                                    <div>
+                                        <div>
+                                            <div class="food">
+                                                <p><b>DOG FOOD</b></p>
+                                                <p>강아지의 알레르기는 줄이고 영양가는 늘린 최고급 강아지 사료!</p>
+                                                <div>
+                                                    <p>성분</p>
+                                                    <p>강아지 관절 건강에 좋은 퀘르세틴, 스피루리나, 파슬리, 글루코사민</p>
+                                                    <p>강아지 눈 건강에 좋은 퀘르세틴, 스피루리나, 파슬리, 글루코사민</p>
+                                                </div>
+                                            </div>
+                                            <div class="snack">
+                                                <p><b>강아지를 위한 수제간식</b></p>
+                                                <p>신선한 원재료를 저온건조하여 영양소를 보존한 천연 수제 간식</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="images/tkfy2.jpg" alt="사료이미지">
+                                            <span>DOG FOOD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 오늘의 산책코스 class:aa a4 -->
+                            <section class="aa a4">
+                                <h3>오늘의 산책코스</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.7647735233313!2d126.82113867624747!3d37.32439923797494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6fa9b791f113%3A0xc1b0ac2c5c89583b!2z7JuQ6rOg7J6U6rO17JuQ!5e0!3m2!1sko!2skr!4v1724047066889!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <ul>
+                                    <li>
+                                        원고잔공원 -> 적금공원 -> 무진빌라3차 -> 집
+                                    </li>
+                                    <li>
+                                        원고잔공원 -> 적금공원 -> 무진빌라3차 -> 집
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- 앨범 class:aa a5 -->
+                            <section class="aa a5">
+                                <h3>반려동물 이름's 앨범</h3>
+                                <div>
+                                    <img src="images/dofqja1.jpg" alt="앨범 사진1">
+                                    <img src="images/dofqja2.jpg" alt="앨범 사진2">
+                                    <img src="images/dofqja3.jpg" alt="앨범 사진3">
+                                    <img src="images/dofqja4.jpg" alt="앨범 사진4">
+                                    <img src="images/dofqja5.jpg" alt="앨범 사진5">
+                                    <img src="images/dofqja6.jpg" alt="앨범 사진6">
+                                </div>
+                            </section>
+
+                            <!-- 기타 class:aa a6 -->
+                            <section class="aa a6">
+                                <h3>의사's 코멘트</h3>
+                                <div>
+                                    <img src="images/icon1.png" alt="의사코멘트 아이콘">
+                                    <div>
+                                        이번 여름 온도가 매우 높기 때문에 산책할 때 조심하는 게 좋겠습니다.<br>
+                                        꼭 물을 충분히 마시게 하세요.
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="mm mm2" id="two">
+                            <!-- 프로필 내용 class:aa a1 -->
+                            <div class="aa a1">
+                                <img src="images/vmfhvlf2.jpg" alt="강아지 프로필 사진">
+                                <div>
+                                    <h3>아롱이</h3>
+                                    <p>나이: 1살</p>
+                                    <p>건강상태: ■■■■■</p>
+                                    <p>활동성: ■■■■■</p>
+                                    <p>친화도: ■■■■■</p>
+                                    <p>특이사항: 아직 아기</p>
+                                </div>
+                            </div>
+
+                            <!-- 하루 한줄 메모 -->
+                            <div class="aa a2">
+                                <h3>한줄 메모</h3>
+                                <div>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            chevron_left
+                                            </span>
+                                        <b>8월 23일</b>
+                                        <span class="material-symbols-outlined">
+                                            chevron_right
+                                            </span>
+                                    </p>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 오늘의 사료 class:aa a3 -->
+                            <section class="aa a3">
+                                <h3>오늘의 사료</h3>
+                                <div>
+                                    <form action="#">
+                                        <select name="languages" id="lang">
+                                            <option value="select">저장된 탬플릿 중 하나를 선택하세요</option>
+                                            <option value="1">저장된 탬플릿1</option>
+                                            <option value="2">저장된 탬플릿2</option>
+                                            <option value="3">저장된 탬플릿3</option>
+                                            <option value="4">저장된 탬플릿4</option>
+                                        </select>
+                                        <input type="submit" value="저장">
+                                        <input type="submit" value="적용">
+                                    </form>
+                                    <div>
+                                        <div>
+                                            <div class="food">
+                                                <p><b>DOG FOOD</b></p>
+                                                <p>강아지의 알레르기는 줄이고 영양가는 늘린 최고급 강아지 사료!</p>
+                                                <div>
+                                                    <p>성분</p>
+                                                    <p>강아지 관절 건강에 좋은 퀘르세틴, 스피루리나, 파슬리, 글루코사민</p>
+                                                    <p>강아지 눈 건강에 좋은 퀘르세틴, 스피루리나, 파슬리, 글루코사민</p>
+                                                </div>
+                                            </div>
+                                            <div class="snack">
+                                                <p><b>강아지를 위한 수제간식</b></p>
+                                                <p>신선한 원재료를 저온건조하여 영양소를 보존한 천연 수제 간식</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="images/tkfy2.jpg" alt="사료이미지">
+                                            <span>DOG FOOD</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 오늘의 산책코스 class:aa a4 -->
+                            <section class="aa a4">
+                                <h3>오늘의 산책코스</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.7647735233313!2d126.82113867624747!3d37.32439923797494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6fa9b791f113%3A0xc1b0ac2c5c89583b!2z7JuQ6rOg7J6U6rO17JuQ!5e0!3m2!1sko!2skr!4v1724047066889!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <ul>
+                                    <li>
+                                        원고잔공원 -> 적금공원 -> 무진빌라3차 -> 집
+                                    </li>
+                                    <li>
+                                        원고잔공원 -> 적금공원 -> 무진빌라3차 -> 집
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- 앨범 class:aa a5 -->
+                            <section class="aa a5">
+                                <h3>반려동물 이름's 앨범</h3>
+                                <div>
+                                    <img src="images/dofqja7.jpg" alt="앨범 사진1">
+                                    <img src="images/dofqja8.jpg" alt="앨범 사진2">
+                                    <img src="images/dofqja9.jpg" alt="앨범 사진3">
+                                    <img src="images/dofqja10.jpg" alt="앨범 사진4">
+                                    <img src="images/dofqja11.jpg" alt="앨범 사진5">
+                                    <img src="images/dofqja12.jpg" alt="앨범 사진6">
+                                </div>
+                            </section>
+
+                            <!-- 기타 class:aa a6 -->
+                            <section class="aa a6">
+                                <h3>의사's 코멘트</h3>
+                                <div>
+                                    <img src="images/icon1.png" alt="의사코멘트 아이콘">
+                                    <div>
+                                        아직 어리기 때문에 지금부터 훈련을 시작하는 게 좋습니다.<br>
+                                        특히 지금이 강아지의 사회성을 기를 적기입니다.<br>
+                                        활동성도 많은 시기이기 때문에 가능한 매일 산책에 나가주세요.
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div> 
+                </section>
+            </div>
+            <!-- 게시글 쓰기 id:plus -->
+            <div id="plus">
+                <a href="#"><img src="images/pl1.png" alt="게시글을 쓸 수 있는 버튼 이미지"></a>
+            </div>
+        </main>
+
+
+
+        <!---푸터-->
+        <footer>
+            <!-- 바로가기 id:mm -->
+            <section id="fm">
+                <h4>바로가기 메뉴</h4>
+                <a href="index.html">홈</a>
+                <a href="community.html">커뮤니티</a>
+                <a href="#">커뮤니티글작성</a>
+                <a href="diary.html">다이어리</a>
+                <a href="#">월별보기</a>
+                <a href="personal.html">개인페이지</a>
+                <a href="#">개인정보수정</a>
+                <a href="#">장례안내</a>
+            </section>
+            <div>
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">청소년 보호정책</a>
+                <a href="#">쿠키 정책</a>
+                <a href="#">마케팅 활용동의</a>
+                <a href="#">자주묻는질문</a>
+                <a href="#">고객센터</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

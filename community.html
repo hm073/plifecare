@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티</title>
+    
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <script src="js/community.js"></script>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <!---로고 이미지 id:logo-->
+            <a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            <!---메뉴(홈, 커뮤니티, 다이어리) id:menu-->
+            <ul id="menu">
+                <li>
+                    <a href="index.html">홈</a>
+                </li>
+                <li>
+                    <a href="community.html">커뮤니티</a>
+                </li>
+                <li>
+                    <a href="diary.html">다이어리</a>
+                </li>
+            </ul>
+            <!---로그인과 개인페이지 id:login-->
+            <div id="login">
+                <a href="signup.html">회원가입</a>
+                <a href="login.html">로그인</a>
+                <a href="personal.html">개인페이지</a>
+            </div>
+        </header>
+
+        <!---제목 커뮤니티 id:title-->
+        <div id="title">
+            <a href="#mainS"><h2>커뮤니티</h2></a>
+        </div>
+
+        <main>
+            <!-- 메인 메뉴 서치 id:mainS -->
+            <div id="mainS">
+                <!--위치, 검색 id:location-->
+                <div id="location">
+                    <p> 
+                        <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                        안산시 단원구 고잔동
+                    </p>
+                    <form>
+                        <p>
+                            검색 
+                            <input type="text">
+                            <span class="material-symbols-outlined">
+                            search
+                            </span>
+                        </p>
+                    </form>
+                </div>
+                <!--메인-메뉴 id:search-->
+                <div id="search">
+                    <button type="button">전체</button>
+                    <button type="button">우리동네</button>
+                    <button type="button">테마검색</button>
+                </div>
+            </div>
+            <!-- 메인 콘텐츠 id:mainC -->
+            <div id="mainC">
+                <!-- 베스트 게시글 class:m mbest b0-->
+                <section class="m">
+                    <h3>커뮤니티 BEST</h3>
+                    <div class="mC">
+                        <div class="mbest b1">
+                            <a href="#">
+                                <img src="images/cm1.jpg" alt="고양이 사진">
+                            </a>
+                            <a href="#">우리 고양이한테 줬을 때 좋아했던 사료 베스트</a>
+                        </div>
+                        <div class="mbest b2">
+                            <a href="#">
+                                <img src="images/cm2.jpg" alt="햄스터 사진1">
+                            </a>
+                            <a href="#">햄스터가 케이지 안에서 사라졌어요.</a>
+                        </div>
+                        <div class="mbest b3">
+                            <a href="#">
+                                <img src="images/cm3.jpg" alt="햄스터 사진2">
+                            </a>
+                            <a href="#">햄스터 기를 때 주의사항 안내. 이런 쳇바퀴를 사면 끼어서 사고가 날 수 있으니 주의할 것!</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 커뮤니티 글박스1 class:main, m1 -->
+                <section class="main m1">
+                    <h2>얼마 전 태어난 아기양입니다<span>2000-00-00 00:00</span></h2>
+                    <div class="n1">
+                        <p>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다. 대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                        <div class="img">
+                            <div><img src="images/cmu1.jpg" alt="삽입그림"></div>
+                            <div><img src="images/cmu2.jpg" alt="삽입그림"></div>
+                            <div><img src="images/cmu3.jpg" alt="삽입그림"></div>
+                        </div>
+                    </div>
+                    <div class="n2">
+                        <p><b>댓글</b></p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법은 1988년 2월 25일부터 시행한다.
+                        </p>
+                        <p> 
+                            <span class="material-symbols-outlined">person</span>
+                            이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 커뮤니티 글박스2 class:main, m2 -->
+                <section class="main m2">
+                    <h2>반려동물을 위한 보험이 있다고 하던데...<span>2000-00-00 00:00</span></h2>
+                    <div class="n1">
+                        <p>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다. 대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                    </div>
+                    <div class="n2">
+                        <p><b>댓글</b></p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다.
+                        </p>
+                        <p> 
+                            <span class="material-symbols-outlined">person</span>
+                            이 헌법은 1988년 2월 25일부터 시행한다.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 커뮤니티 글박스3 class:main, m3 -->
+                <section class="main m3">
+                    <h2>그거 아시나요<span>2000-00-00 00:00</span></h2>
+                    <div class="n1">
+                        <p>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다. 대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                    </div>
+                    <div class="n2">
+                        <p><b>댓글</b></p>
+                    </div>
+                </section>
+                
+                <!-- 커뮤니티 글박스4 class:main, m4 -->
+                <section class="main m4">
+                    <h2>햄스터 기를 때의 주의사항!<span>2000-00-00 00:00</span></h2>
+                    <div class="n1">
+                        <p>대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 이 헌법은 1988년 2월 25일부터 시행한다. 다만, 이 헌법을 시행하기 위하여 필요한 법률의 제정·개정과 이 헌법에 의한 대통령 및 국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다. 대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                        <div class="img">
+                            <div><img src="images/cmu4.jpg" alt="삽입그림"></div>
+                            <div><img src="images/cmu5.jpg" alt="삽입그림"></div>
+                        </div>
+                    </div>
+                    <div class="n2">
+                        <p><b>댓글</b></p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다.
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            헌법은 1988년 2월 25일부터 시행한다.
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            국회의원의 선거 기타 이 헌법시행에 관한 준비는 이 헌법시행 전에 할 수 있다.
+                        </p>
+                        <p>
+                            <span class="material-symbols-outlined">person</span>
+                            대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 커뮤니티 페이지 id:num -->
+                <div id="num">
+                    <a href="#">◀</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">▶</a>
+                </div>
+            </div>
+            <!-- 게시글 쓰기 id:plus -->
+            <div id="plus">
+                <a href="#"><img src="images/pl1.png" alt="게시글을 쓸 수 있는 버튼 이미지"></a>
+            </div>
+        </main>
+
+        <!---푸터-->
+        <footer>
+            <!-- 바로가기 id:mm -->
+            <section id="fm">
+                <h4>바로가기 메뉴</h4>
+                <a href="index.html">홈</a>
+                <a href="community.html">커뮤니티</a>
+                <a href="#">커뮤니티글작성</a>
+                <a href="diary.html">다이어리</a>
+                <a href="#">월별보기</a>
+                <a href="personal.html">개인페이지</a>
+                <a href="#">개인정보수정</a>
+                <a href="#">장례안내</a>
+            </section>
+            <div>
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">청소년 보호정책</a>
+                <a href="#">쿠키 정책</a>
+                <a href="#">마케팅 활용동의</a>
+                <a href="#">자주묻는질문</a>
+                <a href="#">고객센터</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

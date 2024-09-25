@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0; box-sizing: border-box;}
+::-webkit-scrollbar{width: 0;}
+a  {text-decoration: none; color: black;}
+img {display: block;}
+
+#layout {
+    max-width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+h1 {margin-bottom: 50px;}
+
+/* 내용 */
+form {max-width: 500px;}
+table {margin: 15px auto;}
+table td {
+    text-align: center;
+}
+table tr:nth-of-type(1) {
+    padding-bottom: 15px;
+}
+table tr input {
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+table th {
+    text-align: start;
+    line-height: 160%;
+}
+table #pf {font-weight: bold;}
+table:last-of-type td>textarea {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    /* resize: none; */
+}
+
+/* 회원가입 */
+form> button {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: antiquewhite;
+}

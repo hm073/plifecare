@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>로그인</title>
+</head>
+<body>
+    <div id="layout">
+        <form action="index.html" method="get"> <!--main.html-->
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="logo">
+                </a>
+            </h1>
+
+            <table>
+                <tr>
+                    <td colspan="2"><h2 id="sign_i">로그인</h2></td>
+                </tr>
+                <tr>
+                    <th>ID :</th>
+                    <td><input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요."></td>
+                </tr>
+                <tr>
+                    <th>PW :</th>
+                    <td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력해 주세요."></td>
+                </tr>
+            </table>
+
+            <div class="more">
+                <a href="signup.html">회원가입</a>
+                 / 
+                <a href="#"> 비밀번호 찾기</a>
+            </div>
+            <button type="submit" id="loginbtn">로그인</button>
+        </form>
+    </div>
+</body>
+</html>
